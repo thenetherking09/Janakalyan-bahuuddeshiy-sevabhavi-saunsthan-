@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janakalyan Bahuuddeshiy Sevabhavi Saunsthan | Nashik</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Janakalyan <span>Nashik</span></h1>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#initiatives">Our Initiatives</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn donate-btn" onclick="openDonateModal()">Donate Now</button>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Empowering Lives, Uplifting Communities</h2>
+            <p>Janakalyan Bahuuddeshiy Sevabhavi Saunsthan is dedicated to social welfare, education, and rural development in Nashik, Maharashtra.</p>
+            <a href="#about" class="btn primary-btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">About Our Saunsthan</h2>
+            <div class="divider"></div>
+            <p class="about-text">
+                Based in Nashik, Janakalyan Bahuuddeshiy Sevabhavi Saunsthan is a non-profit, non-governmental organization committed to driving positive change at the grassroots level. We believe in holistic development through education, healthcare, women empowerment, and environmental sustainability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Initiatives Section -->
+    <section id="initiatives" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Our Initiatives</h2>
+            <div class="divider center-div"></div>
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <div class="card">
+                    <i class="fas fa-book-open icon"></i>
+                    <h3>Education for All</h3>
+                    <p>Providing free educational resources and scholarships to underprivileged children in rural Nashik.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <i class="fas fa-heartbeat icon"></i>
+                    <h3>Health Camps</h3>
+                    <p>Organizing free medical check-ups, blood donation drives, and health awareness campaigns.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <i class="fas fa-seedling icon"></i>
+                    <h3>Rural Development</h3>
+                    <p>Supporting farmers with sustainable agriculture techniques and promoting environmental conservation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <div class="divider center-div"></div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Nashik, Maharashtra, India</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> contact@janakalyannashik.org</p>
+                </div>
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Janakalyan Bahuuddeshiy Sevabhavi Saunsthan Nashik. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript Alert Modal for Donate -->
+    <script src="script.js"></script>
+</body>
+  </html>
+  
