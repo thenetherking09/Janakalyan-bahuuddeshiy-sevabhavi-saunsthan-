@@ -67,23 +67,21 @@ header .container {
     height: 80px;
 }
 
-/* Logo and Link Adjustments */
-.logo a {
+/* Updated Logo Section */
+.logo {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    gap: 12px;
+    max-width: 50%;
 }
-
 .logo-img {
     height: 50px;
     width: auto;
-    object-fit: contain;
+    margin-right: 12px;
+    border-radius: 4px;
 }
-
 .logo h1 { 
     color: var(--primary-color); 
-    font-size: 1.2rem; 
+    font-size: 1.2rem; /* Scaled down slightly to fit the longer name */
     line-height: 1.2;
 }
 
@@ -140,8 +138,8 @@ nav { display: flex; align-items: center; }
 }
 
 .contact-info { flex: 1; font-size: 1.1rem; }
-.contact-info p { margin-bottom: 15px; display: flex; align-items: center; gap: 10px;}
-.contact-info i { color: var(--primary-color); width: 20px; text-align: center;}
+.contact-info p { margin-bottom: 15px; display: flex; align-items: center;}
+.contact-info i { color: var(--primary-color); margin-right: 15px; width: 20px; text-align: center;}
 
 .contact-form { flex: 1; display: flex; flex-direction: column; gap: 15px; }
 .contact-form input, .contact-form textarea {
@@ -164,13 +162,10 @@ footer {
 .social-links a:hover { color: var(--secondary-color); }
 
 /* --- Responsive Design --- */
-@media (max-width: 992px) {
-    .logo h1 { font-size: 1rem; }
-}
-
 @media (max-width: 768px) {
-    .logo h1 { font-size: 0.9rem; max-width: 200px;}
-    .logo-img { height: 40px; }
+    .logo { max-width: 70%; }
+    .logo-img { height: 35px; }
+    .logo h1 { font-size: 0.9rem; }
     
     .nav-links {
         display: none;
@@ -188,5 +183,5 @@ footer {
     .menu-icon { display: block; }
     .hero-content h2 { font-size: 2rem; }
     .contact-wrapper { flex-direction: column; }
-    }
-                                     
+     }
+    
