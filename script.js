@@ -7,13 +7,13 @@ function toggleMenu() {
 // Handle Form Submission
 function submitForm(event) {
     event.preventDefault(); // Prevents the page from reloading
-    alert("Thank you for reaching out to Janakalyan Bahuuddeshiy Sevabhavi Saunsthan Nashik! We will get back to you shortly.");
+    alert("Thank you for reaching out to Janakalyan Bahuuddeshiy Sevabhavi Saunstha! We will get back to you shortly.");
     event.target.reset(); // Clears the form fields
 }
 
 // Simulate Donate Action
 function openDonateModal() {
-    alert("Thank you for your willingness to support our cause in Nashik! (This is a placeholder. Here you would link to a payment gateway like Razorpay, PayU, or UPI).");
+    alert("Thank you for your willingness to support our cause! (This is a placeholder. Here you would link to a payment gateway like Razorpay, PayU, or UPI).");
 }
 
 // Add a slight shadow to the header on scroll
